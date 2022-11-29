@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --sm-font:1rem;
+   --lg-font:3rem;
+   --md-font:2rem;
+   --first-color:rgb(10, 170, 170);
+   --second-color:rgb(241, 247, 247);
+}
+body{
+    background-color: gray;
+}
+.main{
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+.input{
+    width: 20rem;
+    outline: none;
+   height: 2rem;
+   padding: 1rem 0.8rem;
+   border: none;
+   
+}
+.search-btn{
+    width: 5rem;
+    height: 2rem;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    border: none;
+    font-size: var(--sm-font);
+}
+.dashboard{
+    width: 47rem;
+    background-color: var(--second-color);
+    border-radius: 1.5rem;
+}
+.icon{
+    font-size: 6rem;
+   display: flex;
+   justify-content: center;
+   margin: 2rem;
+
+}
+.main-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 3rem 0;
+}
+.temperature,.city-day{
+    font-size: var(--lg-font);
+    background-color: black;
+    color: var(--second-color);
+    padding: 2rem;
+}
+
+
+.date{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-size: var(--md-font);
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+.footer{
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.two-side{
+    display: flex;
+    gap:1rem;
+   
+}
+.two-side>p>span{
+    font-size: var(--md-font);
+}
